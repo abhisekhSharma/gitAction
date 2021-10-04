@@ -1,4 +1,4 @@
-name: workflowFirst
+name: workflowList
 on: push
 jobs: 
   qualityCheck:
