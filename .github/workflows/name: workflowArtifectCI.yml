@@ -35,11 +35,11 @@ jobs:
       uses: actions/download-artifact@v2.0.10
       with:
         name: myAppBuild
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2.4.1
-    - name: test myApp
-      run : |
-        npm install next react react-dom
-        npm run start
+    # - name: Setup Node.js environment
+    #   uses: actions/setup-node@v2.4.1
+    # - name: test myApp
+    #   run : |
+    #     npm install next react react-dom
+    #     npm run start
         
 
