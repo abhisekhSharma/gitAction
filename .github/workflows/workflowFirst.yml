@@ -1,5 +1,5 @@
 name: workflowFirstSample
-on: push
+on: pull_request
 jobs: 
   jobs1:
     name: ubuntu-latest

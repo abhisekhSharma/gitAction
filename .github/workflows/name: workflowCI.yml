@@ -1,5 +1,5 @@
-name: workflow-quality-check
-on: push
+name: workflowLint
+on: pull_request
 jobs: 
   qualityCheck:
     name: quality-check
