@@ -20,10 +20,10 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with: 
         name: myApp
-        path: ./myApp
+        path: ./out
 
   downloadAndTestArtifact:
-    name: quality-check
+    name: download-TestApp
     runs-on: ubuntu-latest
     needs: [qualityCheckAndBuild]
     steps: 
