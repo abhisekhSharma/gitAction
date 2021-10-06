@@ -19,8 +19,10 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with: 
-        name: myApp
-        path: ./.next
+        name: myAppBuild
+        path: |
+          .next
+          public
 
   downloadAndTestArtifact:
     name: download-TestApp
@@ -32,7 +34,7 @@ jobs:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v2.0.10
       with:
-        name: myApp
+        name: myAppBuild
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.4.1
     - name: test myApp
